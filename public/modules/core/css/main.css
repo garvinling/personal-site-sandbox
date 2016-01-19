@@ -1,0 +1,8 @@
+a.myAnchor {
+  color: blue; }
+  a.myAnchor:hover {
+    text-decoration: underline; }
+  a.myAnchor:visited {
+    color: purple; }
+
+/*# sourceMappingURL=main.css.map */
