@@ -1,8 +1,141 @@
-a.myAnchor {
-  color: blue; }
-  a.myAnchor:hover {
-    text-decoration: underline; }
-  a.myAnchor:visited {
-    color: purple; }
+/* Variables */
+/* Page Styles */
+body {
+  font-family: "Montserrat", sans-serif !important; }
+
+.bg-image-section {
+  background-image: url("/modules/core/img/coffee-display.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 800px; }
+  .bg-image-section h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 100px; }
+  .bg-image-section .bg-gradient {
+    width: 100%;
+    height: 800px;
+    margin: 0px;
+    overflow-x: hidden;
+    background: rgba(255, 78, 80, 0.7);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgba(255, 78, 80, 0.7), rgba(249, 212, 35, 0.7));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, rgba(255, 78, 80, 0.7), rgba(249, 212, 35, 0.7));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .bg-image-section .main-text {
+    text-align: center;
+    color: white;
+    margin-top: 300px; }
+
+.portfolio-section {
+  height: 600px;
+  margin-top: -10px;
+  margin-left: -10px; }
+
+.wrap {
+  overflow: hidden;
+  margin: 10px; }
+
+.box {
+  float: left;
+  position: relative;
+  width: 25%;
+  padding-bottom: 20%;
+  background-image: url("/modules/core/img/CLP_mockup.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .box h1 {
+    color: white;
+    margin-top: 100px;
+    width: 100%; }
+  .box h1:after {
+    content: '';
+    display: block;
+    background: white;
+    height: 2px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px; }
+  .box .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20%; }
+
+.clp {
+  background-image: url(/modules/core/img/mockup-test.gif) !important; }
+
+.coffeedisplay {
+  background-image: url(/modules/core/img/mockup-test2.gif) !important; }
+
+.box:hover .overlay {
+  opacity: 0; }
+
+.boxInner {
+  position: absolute;
+  left: 0px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+.boxInner img {
+  width: 100%;
+  display: none; }
+
+.boxInner .titleBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -50px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+  margin-bottom: 0; }
+
+@media only screen and (max-width: 480px) {
+  /* Smartphone view: 1 tile */
+  .box {
+    width: 100%;
+    padding-bottom: 100%; } }
+
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  /* Tablet view: 2 tiles */
+  .box {
+    width: 50%;
+    padding-bottom: 50%; } }
+
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .box {
+    width: 33.3%;
+    padding-bottom: 33.3%; } }
+
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  /* Medium desktop: 4 tiles */
+  .box {
+    width: 25%;
+    padding-bottom: 25%; } }
 
 /*# sourceMappingURL=main.css.map */

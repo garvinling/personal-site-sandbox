@@ -70,7 +70,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'public/modules/core/css/file.css': 'public/modules/core/sass/{,*/}*.{scss,sass}'
+          'public/modules/core/css/main.css': 'public/modules/core/sass/app.scss'//'public/modules/core/sass/{,*/}*.{scss,sass}'
         }
       }
     },
