@@ -8,7 +8,7 @@ body{
 
 .bg-image-section
 {
-	background-image:url('/modules/core/img/coffee-display.png');
+	background-image:url('/modules/core/img/mountain.jpeg');
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -31,8 +31,7 @@ body{
 		background: $left_gradient; /* fallback for old browsers */
 		background: -webkit-linear-gradient(to left, $left_gradient, $right_gradient); /* Chrome 10-25, Safari 5.1-6 */
 		background: linear-gradient(to left, $left_gradient, $right_gradient); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-		 
-
+		background:rgba(0,0,0,0.6);
 	}
 
 	.main-text
@@ -40,6 +39,8 @@ body{
 		text-align: center;
 		color:white;
 		margin-top:300px;
+		font-family:$body-font;
+
 	}
 
 

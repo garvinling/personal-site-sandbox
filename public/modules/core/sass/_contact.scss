@@ -1,0 +1,52 @@
+.contact{
+
+   height:600px;
+   background-image:url("/modules/core/img/gmapbw.png");
+   background-size:cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   text-align: center;
+   color:white;
+   font-size:18px;
+
+   .overlay{
+	 padding:100px;
+	 background-color:rgba(46,204,113,0.8);
+    background:rgba(0,0,0,0.8);
+    width:100%;
+    height:100%;
+
+    h1{
+    	color:white;
+    	font-size:80px;
+    	margin-bottom:30px;
+    }
+}
+
+
+label{
+	color:#fff;
+	font-family:$body-font;
+	font-size:18px;
+	margin-right:15px;
+}
+
+form{
+	margin-left:20px;
+}
+
+   input{
+   		margin-bottom:20px;
+   		border:none;
+   		background-color:rgba(0,0,0,0);
+   		border-bottom:2px solid #eee;
+   		text-align:center;
+   		box-shadow: none;
+   		color:#9b59b6;
+
+   		&:focus{
+   			outline:none;
+   		}
+   }
+}
+

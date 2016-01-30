@@ -1,4 +1,7 @@
-.portfolio-section{height:600px; margin-top:-10px; margin-left:-10px;}
+.portfolio-section{
+  
+  margin-top:-10px; 
+  margin-left:-10px;}
 
 .wrap {
    overflow: hidden;
@@ -34,7 +37,7 @@
 
   .overlay{
     position:absolute;
-    background:rgba(0,0,0,.5);
+    background:rgba(0,0,0,0.7);
     text-align:center;
     opacity:1;
     -webkit-transition: opacity .25s ease;
@@ -48,15 +51,6 @@
 }
 
 
-.clp{
-   background-image:url(/modules/core/img/mockup-test.gif) !important;
-}
-
-
-.coffeedisplay{
-     background-image:url(/modules/core/img/mockup-test2.gif) !important;
-
-}
 
 
 // .box:after {
@@ -74,7 +68,10 @@
 // }
 
 .box:hover .overlay{
-	opacity:0;
+    background: rgba(0,0,11,0.4);
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.25s ease;
+    -moz-transition: all 1.25s ease;
 }
 
 

@@ -1,0 +1,35 @@
+
+@mixin buttonTheme($color,$hoverBgColor,$hoverColor){
+
+		color:$color;
+		background-color: rgba(0,0,0,0);
+		border:2px solid $color;
+		font-size:18px;
+		border-radius:0px;
+
+		&:hover{
+
+			background-color:$hoverBgColor;
+			color:$hoverColor;
+
+		}
+
+
+
+}
+
+
+
+
+.btn-main{	
+
+	@include buttonTheme(black,black,white);
+
+}
+
+
+.btn-white{
+
+	@include buttonTheme(white,black,white);
+
+}
