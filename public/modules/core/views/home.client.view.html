@@ -1,6 +1,6 @@
 <section data-ng-controller="HomeController">
 	
-	<section class="bg-image-section">
+	<section class="bg-image-section bg-image-1">
 
     <div class="top-bar">
 
@@ -13,19 +13,14 @@
 
   			<div class="row">
   				<div class="col-md-12 main-text">
-
-  			   
-            <h1 typewrite type-delay="100" text="Garvin" initial-delay="1s" blink-cursor="false">&nbsp;</h1>
-
+            <!-- <h1 typewrite type-delay="0" text="Garvin" blink-cursor="false">&nbsp;</h1> -->
+            <h1>Garvin</h1>
             <p>
               Full-stack JavaScript developer based in Pasadena, CA
             </p>
-
             <p>
               Currently building web applications @ Kaiser Permanente
-
             </p>
-
 
             <div class="social-media">
               <a target="_blank" href="https://twitter.com/garvinling">Twitter</a> |   <a target="_blank" href="https://medium.com/@garvinling">Medium</a>  |   <a target="_blank" href="https://github.com/garvinling">GitHub</a>  |   <a target="_blank" href="https://www.linkedin.com/in/garvinling">LinkedIn</a> 
@@ -36,20 +31,11 @@
                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
             </div>
 
-
-
-
 <!-- 
-
-
-
             <h1 class="line-one big">Born</h1>
             <h1 class="line-two">too soon to explore</h1>
             <h1 class="line-three">the GALAXY...</h1>
-
-
             <h1 class="line-one">Born just in time to write</h1>
-
             <h1 class="line-one" typewrite type-delay="100" initial-delay="1s" blink-cursor="false" text="JavaScript"></h1>
     -->
 
@@ -60,10 +46,12 @@
 	</section>
 
 
+
+
 <section class="portfolio-section">
   <div class="wrap">    
     <div data-ng-repeat="project in projectCollection track by project.id">
-      <a href="" ng-click="clickedProject()">
+      <a href=""  ng-click="clickedProject(project.id)">
       <div class="box" ng-init="bg = project.imageURL" 
           ng-mouseenter="bg = project.hoverImageURL" 
           ng-mouseleave="bg = project.imageURL" 
@@ -82,11 +70,39 @@
 
   <section class="timeline-section">
     <div class="row">
-      <div class="col-md-4 experience">
-        <h1>Work Experience<span class="blinking-cursor">|</span></h1>
-        <button class="btn btn-main">Download Resume</button>
+      <div class="col-md-5 experience">
+        <h1 typewrite type-delay="100" text="{{test}}" blink-cursor="true"></h1>
+
+
+        <div data-ng-repeat="projectDetails in projectCollection track by projectDetails.id">
+         <div  class="project-details animate-show" ng-show="projectCollection[$index].checked">
+            <p>
+              <h3> Project Details </h3> {{projectCollection[$index].details}}
+            </p>
+            <p>
+              <h3> Highlights </h3>
+              {{projectCollection[$index].highlight1}}
+              <br>
+              {{projectCollection[$index].highlight2}}
+              <br>
+              {{projectCollection[$index].highlight3}}
+            </p>
+            <p>
+              <h3> Technologies Used </h3> {{projectCollection[$index].technology}}
+            </p>
+
+         </div>
+       </div>
+
+
+        <!-- <button class="btn btn-main">Download Resume</button> -->
+      
+ 
       </div>
-      <div class="col-md-8">
+     
+
+
+      <div class="col-md-5">
         <div class="container">
           <ul class="timeline">
             <li data-ng-repeat="job in jobs track by job.id">
@@ -107,28 +123,31 @@
     </div>
   </section>
 
- 
- <section class="contact">
-  <div class="overlay">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Get in Touch</h1>
-        <form>
-          <!-- <label for="email">Name</label> -->
-          My name is
-          <input type="text" name="name"/>, and I am interested in 
-          <input type="text" name="subject"/>.
-          <br>
-          To sign away 100% of your financial assets, type your e-mail in the signature looking box.
-          <br><br>
-         X <input type="email" name="email" />
-          <br><br>
-          <button class="btn btn-white" type="submit">Request Carrier Pigeon</button>
-        </form>
-      </div>
-    </div>
-  </div>
- </section>
+
+
+
+  <section class="contact contact-image-1">
+    <div class="overlay">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Get in Touch</h1>
+            <form>
+              <!-- <label for="email">Name</label> -->
+              My name is
+              <input type="text" name="name"/>, and I am interested in 
+              <input type="text" name="subject"/>.
+              <br>
+              To sign away 100% of your financial assets, type your e-mail in the signature looking box.
+              <br><br>
+             X <input type="email" name="email" />
+              <br><br>
+              <button class="btn btn-white" type="submit">Request Carrier Pigeon</button>
+            </form>
+          </div>
+        </div>
+      </div>  
+</section>
+
 
 
   <section class="footer">
