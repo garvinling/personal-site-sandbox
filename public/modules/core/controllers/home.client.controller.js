@@ -14,7 +14,7 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
 			{
 				id:1,
 				title:'CLP',
-				imageURL:'/modules/core/img/CLP_mockup.png',
+				imageURL:'/modules/core/img/CLPLogin.png',
 				hoverImageURL:'/modules/core/img/mockup-test4.gif',
 				checked:false,
 				details:'CLP (Consolidated List of Projects) is a web application that houses all of the ideas, proof of concepts, pilots, and projects for the Southern California region.',
