@@ -13,7 +13,8 @@
 
 /* Page Styles */
 body {
-  font-family: "Montserrat", sans-serif !important; }
+  font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden; }
 
 a {
   color: #fff; }
@@ -22,11 +23,6 @@ a {
     text-decoration: none; }
 
 .bg-image-section {
-  background-image: url("/modules/core/img/mountain.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
   height: 800px; }
   .bg-image-section h1 {
@@ -57,11 +53,27 @@ a {
     margin-top: 60px;
     font-family: "Titillium Web", sans-serif;
     letter-spacing: 3px;
-    overflow-y: scroll; }
+    overflow-y: hidden; }
     .bg-image-section .main-text p {
       width: 40%;
       margin-left: auto;
       margin-right: auto; }
+  .bg-image-section:before {
+    content: ' ';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform; }
+
+.bg-image-1:before {
+  background-image: url("/modules/core/img/mountain.jpeg"); }
 
 .big {
   font-size: 170px !important;
@@ -96,13 +108,30 @@ a {
   .top-bar h2 {
     font-family: 'BEYNO'; }
 
+.project-details {
+  height: 400px; }
+
+.animate-show {
+  line-height: 20px;
+  opacity: 1;
+  padding: 10px;
+  background: white; }
+
+.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+  transition: all linear 0.1s; }
+
+.animate-show.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px; }
+
 .portfolio-section {
   margin-top: -10px;
-  margin-left: -10px; }
+  margin-left: 0px;
+  padding: 0; }
 
 .wrap {
-  overflow: hidden;
-  margin: 10px; }
+  overflow: hidden; }
 
 .box {
   float: left;
@@ -116,6 +145,7 @@ a {
   .box h1 {
     color: white;
     margin-top: 100px;
+    letter-spacing: 12px;
     width: 100%; }
   .box h1:after {
     content: '';
@@ -204,8 +234,9 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   height: 900px; }
 
 .timeline-section {
-  height: 600px;
-  margin-top: 100px; }
+  min-height: 600px;
+  margin-top: -10px;
+  background-color: white; }
 
 .experience {
   padding-left: 120px; }
@@ -213,7 +244,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     margin-left: 20px;
     margin-top: 20px; }
   .experience h1 {
-    font-size: 120px; }
+    font-size: 100px; }
 
 .timeline {
   list-style: none;
@@ -386,18 +417,18 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     color: black; } }
 
 .contact {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
   height: 600px;
-  background-image: url("/modules/core/img/gmapbw.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   text-align: center;
   color: white;
   font-size: 18px; }
   .contact .overlay {
     padding: 100px;
     background-color: rgba(46, 204, 113, 0.8);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%; }
     .contact .overlay h1 {
@@ -418,14 +449,31 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     border-bottom: 2px solid #eee;
     text-align: center;
     box-shadow: none;
-    color: #9b59b6; }
+    color: #fff; }
     .contact input:focus {
       outline: none; }
+  .contact:before {
+    content: ' ';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform; }
+
+.contact-image-1:before {
+  background-image: url("/modules/core/img/letterbg.jpeg"); }
 
 .footer {
   height: 70px;
   color: black;
-  text-align: center; }
+  text-align: center;
+  background-color: #fff; }
   .footer .footer-content {
     padding: 20px; }
 

@@ -1,7 +1,8 @@
 .timeline-section{
 
- height:600px;
- margin-top:100px;
+ min-height:600px;
+ margin-top:-10px;
+ background-color:white;
 
 }
 
@@ -16,10 +17,13 @@
   }
 
   h1{
-    font-size:120px;
+    font-size:100px;
     
   }
 }
+
+
+
 
 
 

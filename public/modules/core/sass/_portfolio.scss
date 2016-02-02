@@ -1,11 +1,12 @@
 .portfolio-section{
   
   margin-top:-10px; 
-  margin-left:-10px;}
+  margin-left:0px;
+  padding:0;
+}
 
 .wrap {
    overflow: hidden;
-   margin: 10px;
 }
 .box {
 
@@ -20,7 +21,7 @@
    h1{
    	color:white; 
    	margin-top:100px;
-   	// background-color:rgba(0, 0, 0, 1);
+    letter-spacing: 12px;
    	width:100%;
    }
 
