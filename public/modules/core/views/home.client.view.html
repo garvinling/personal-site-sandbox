@@ -70,39 +70,31 @@
 
   <section class="timeline-section">
     <div class="row">
-      <div class="col-md-5 experience">
+      <div class="col-md-7 experience">
         <h1 typewrite type-delay="100" text="{{test}}" blink-cursor="true"></h1>
-
-
         <div data-ng-repeat="projectDetails in projectCollection track by projectDetails.id">
-         <div  class="project-details animate-show" ng-show="projectCollection[$index].checked">
-            <p>
-              <h3> Project Details </h3> {{projectCollection[$index].details}}
-            </p>
-            <p>
-              <h3> Highlights </h3>
-              {{projectCollection[$index].highlight1}}
-              <br>
-              {{projectCollection[$index].highlight2}}
-              <br>
-              {{projectCollection[$index].highlight3}}
-            </p>
-            <p>
-              <h3> Technologies Used </h3> {{projectCollection[$index].technology}}
-            </p>
-
-         </div>
+           <div  class="project-details animate-show" ng-show="projectCollection[$index].checked">
+              <p>
+                <h3> Project Details </h3> {{projectCollection[$index].details}}
+              </p>
+              <p>
+                <h3> Highlights </h3>
+                {{projectCollection[$index].highlight1}}
+                <br>
+                {{projectCollection[$index].highlight2}}
+                <br>
+                {{projectCollection[$index].highlight3}}
+              </p>
+              <p>
+                <h3> Technologies Used </h3> {{projectCollection[$index].technology}}
+              </p>
+           </div>
        </div>
-
-
-        <!-- <button class="btn btn-main">Download Resume</button> -->
-      
- 
-      </div>
+    </div>
      
 
 
-      <div class="col-md-5">
+      <div class="col-md-1 timeline-container">
         <div class="container">
           <ul class="timeline">
             <li data-ng-repeat="job in jobs track by job.id">
@@ -129,10 +121,9 @@
   <section class="contact contact-image-1">
     <div class="overlay">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 contact-content">
             <h1>Get in Touch</h1>
             <form>
-              <!-- <label for="email">Name</label> -->
               My name is
               <input type="text" name="name"/>, and I am interested in 
               <input type="text" name="subject"/>.
@@ -146,9 +137,19 @@
           </div>
         </div>
       </div>  
+        <section class="footer">
+    <div class="row">
+      <div class="col-md-12 footer-content">
+        Made with 
+        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+        by @garvinling
+      </div>
+    </div>
+  </section>
+
 </section>
 
-
+<!-- 
 
   <section class="footer">
     <div class="row">
@@ -158,10 +159,8 @@
         by @garvinling
       </div>
     </div>
-
-
   </section>
-
+ -->
 
 
 

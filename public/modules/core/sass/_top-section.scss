@@ -21,7 +21,7 @@ a{
 
 	width:100%;
 	height:800px;
-
+	z-index:-1;
 
 	h1{
 		font-family: 'Debby';
@@ -74,9 +74,9 @@ a{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+	z-index:-1;
     width: 100%;
-    height: 100%;
+    height: 800px;
     background-color: #f6f6f6;
     background-position: center top;
     background-repeat: no-repeat;
