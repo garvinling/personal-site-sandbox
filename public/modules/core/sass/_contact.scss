@@ -1,6 +1,6 @@
           
 .contact {
-  position: relative;
+  position: absolute;
   z-index: -1;
   overflow: hidden;
   width: 100%;
@@ -11,8 +11,7 @@
 
   .overlay{
     padding:100px;
-    background-color:rgba(46,204,113,0.8);
-    background:rgba(0,0,0,0.3);
+    background:rgba(0,0,0,0.4);
     width:100%;
     height:100%;
 
@@ -49,6 +48,9 @@
     }
   }
 
+ .contact-content{
+  z-index:2 !important;
+ }
 
 
   &:before {
@@ -56,9 +58,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
     width: 100%;
     height: 100%;
+    z-index:-1;
     background-color: #f6f6f6;
     background-position: center top;
     background-repeat: no-repeat;
