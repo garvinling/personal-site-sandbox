@@ -57,7 +57,7 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
 			{
 				id:4,
 				title:'PROJECT',
-				imageURL:'/modules/core/img/hero.png',
+				imageURL:'/modules/core/img/roundrobin.png',
 				hoverImageURL: 'modules/core/img/mockup-test.gif',
 				checked:false
 			}
